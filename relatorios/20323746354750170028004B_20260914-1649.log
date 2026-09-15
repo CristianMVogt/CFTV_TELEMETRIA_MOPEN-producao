@@ -1,0 +1,47 @@
+pacote alvo: neonex_cftv_v-3.2.0.144
+== esperando a placa em 192.168.5.101 (ate 120 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+== placa: MAC 00:80:E1:79:F0:78  serial 20323746354750170028004B  fw neonex_cftv_v-3.2.0.129  uptime 9 s ==
+  [OK   ] bootloader presente: flash externa ok, jedec ef4015
+  atualizando neonex_cftv_v-3.2.0.129 -> neonex_cftv_v-3.2.0.144 ...
+  192.168.5.101: neonex_cftv_v-3.2.0.129 -> enviando neonex_cftv_v-3.2.0.144.nxfw
+  192.168.5.101: envio falhou (estado '', erro '')
+== esperando a placa em 192.168.5.101 (ate 90 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+  [FALHA] OTA para o pacote alvo: neonex_cftv_v-3.2.0.129
+  [OK   ] configuracao restaurada ao padrao: configuracao restaurada ao padrao de fabrica - entre novamente
+  [OK   ] senha de fabrica Neonex@123 aceita
+  [OK   ] relogio acertado: hora acertada
+  [OK   ] alerta de fonte alta em 29,5 V: 29500 mV
+== hardware ==
+  [OK   ] I2C ina3221_40: addr 0x40 bus 1 falhas 0
+  [OK   ] I2C ina3221_41: addr 0x41 bus 1 falhas 0
+  [OK   ] I2C ina226: addr 0x45 bus 1 falhas 0
+  [OK   ] I2C sht30: addr 0x44 bus 1 falhas 0
+  [OK   ] fonte 26,0-29,5 V com rede presente: 28.9 V
+  [OK   ] bateria plausivel (> 20 V): INA226 25746 mV, ADC 25725 mV
+  [OK   ] VBAT ADC x INA226 dentro de 0,5 V: diferenca -21 mV
+  [OK   ] SoC por contagem de coulomb: 90 %, 0.56 A, estagio absorcao
+  [OK   ] fonte alimenta o barramento (banco nao descarrega com a fonte acima dele): fonte 28.9 V, banco 25.75 V, corrente do banco 0.56 A
+  [--   ] sensor de fase nao avaliado: sem rede CA no conector X1 (tmov 0 mV)
+  [OK   ] temperatura da placa 0-70 C: 27.9 C
+  [OK   ] temperatura do painel 0-60 C: 19.0 C
+  [OK   ] umidade 5-95 %: 59.5 %
+  [OK   ] RTC sincronizado: 2026-09-14 16:49:29
+== saidas 12 Vcc ==
+  [OK   ] bullet1 desliga (VOUT < 4 V em ate 12 s): 1.8 V em 2 s
+  [OK   ] bullet1 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet2 desliga (VOUT < 4 V em ate 12 s): 2.2 V em 2 s
+  [OK   ] bullet2 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet3 desliga (VOUT < 4 V em ate 12 s): 2.3 V em 2 s
+  [OK   ] bullet3 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet4 desliga (VOUT < 4 V em ate 12 s): 2.1 V em 2 s
+  [OK   ] bullet4 liga (11-13 V): 12.0 V, 0.02 A
+  [--   ] saida LPR nao testada (--sem-lpr)
+  [OK   ] rele auxiliar alterna e volta: False -> True -> False
+  [OK   ] SNMP responde (tensao da bateria, saude): SNMPv2-SMI::enterprises.66420.1.3.2.0 = INTEGER: 26008 | SNMPv2-SMI::enterprises.66420.1.3.10.0 = INTEGER: 100
+== saidas do MCU (forcando pinos) ==
+  [FALHA] comando de forcar pino disponivel:  (firmware antigo?)
+== RESULTADO: REPROVADA em 2 item(ns) ==
+   - OTA para o pacote alvo: neonex_cftv_v-3.2.0.129
+   - comando de forcar pino disponivel:  (firmware antigo?)

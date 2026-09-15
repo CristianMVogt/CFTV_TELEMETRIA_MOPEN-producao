@@ -1,0 +1,58 @@
+pacote alvo: neonex_cftv_v-3.2.0.144
+== esperando a placa em 192.168.5.101 (ate 120 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+== placa: MAC 00:80:E1:65:D6:6E  serial 2032374635475017002C0051  fw neonex_cftv_v-3.2.0.129  uptime 6 s ==
+  [OK   ] bootloader presente: flash externa ok, jedec ef4015
+  atualizando neonex_cftv_v-3.2.0.129 -> neonex_cftv_v-3.2.0.144 ...
+  192.168.5.101: neonex_cftv_v-3.2.0.129 -> enviando neonex_cftv_v-3.2.0.144.nxfw
+  192.168.5.101: aplicando, aguardando reinicio
+  192.168.5.101: ok, agora em neonex_cftv_v-3.2.0.144
+== esperando a placa em 192.168.5.101 (ate 90 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+  [OK   ] OTA para o pacote alvo: neonex_cftv_v-3.2.0.144
+  [OK   ] configuracao restaurada ao padrao: configuracao restaurada ao padrao de fabrica - entre novamente
+  [OK   ] senha de fabrica Neonex@123 aceita
+  [OK   ] relogio acertado: hora acertada
+  [OK   ] alerta de fonte alta em 29,5 V: 29500 mV
+== hardware ==
+  [OK   ] I2C ina3221_40: addr 0x40 bus 1 falhas 0
+  [OK   ] I2C ina3221_41: addr 0x41 bus 1 falhas 0
+  [OK   ] I2C ina226: addr 0x45 bus 1 falhas 0
+  [OK   ] I2C sht30: addr 0x44 bus 1 falhas 1
+  [FALHA] fonte 26,0-29,5 V com rede presente: 0.5 V
+  [OK   ] bateria plausivel (> 20 V): INA226 25906 mV, ADC 26057 mV
+  [OK   ] VBAT ADC x INA226 dentro de 0,5 V: diferenca 151 mV
+  [OK   ] SoC por contagem de coulomb: 90 %, -0.23 A, estagio em descarga
+  [--   ] sensor de fase nao avaliado: sem rede CA no conector X1 (tmov 0 mV)
+  [OK   ] temperatura da placa 0-70 C: 30.6 C
+  [OK   ] temperatura do painel 0-60 C: 21.8 C
+  [OK   ] umidade 5-95 %: 54.9 %
+  [OK   ] RTC sincronizado: 2026-09-14 16:32:43
+== saidas 12 Vcc ==
+  [OK   ] bullet1 desliga (VOUT < 4 V em ate 12 s): 2.1 V em 2 s
+  [OK   ] bullet1 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet2 desliga (VOUT < 4 V em ate 12 s): 2.1 V em 2 s
+  [OK   ] bullet2 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet3 desliga (VOUT < 4 V em ate 12 s): 2.0 V em 2 s
+  [OK   ] bullet3 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet4 desliga (VOUT < 4 V em ate 12 s): 2.1 V em 2 s
+  [OK   ] bullet4 liga (11-13 V): 12.0 V, 0.02 A
+== saida LPR 24 Vca ==
+  [OK   ] LPR ligada sem falha: falha=0 csMv=0
+  [OK   ] LPR pico na saida >= 20 V: voutMax 25823 mV, pctAlto 95 %
+  [OK   ] LPR sem codigo de falha no CS (< 3,0 V na janela): 0 mV
+  [OK   ] LPR regulacao de RMS ativa (4000-8333 us): onUs 7348, RMS calc 23996 mV
+  [FALHA] LPR correntes das pernas (retrabalho SEL0->INA): iA 0 iB 0: SEM carga na LPR ou SEM retrabalho SEL0 (ligue a carga de 2 A e repita com --so-lpr)
+  [OK   ] LPR desliga (pico < 3 V): voutMax 677 mV
+  [OK   ] rele auxiliar alterna e volta: False -> True -> False
+  [OK   ] SNMP responde (tensao da bateria, saude): SNMPv2-SMI::enterprises.66420.1.3.2.0 = INTEGER: 26178 | SNMPv2-SMI::enterprises.66420.1.3.10.0 = INTEGER: 100
+== saidas do MCU (forcando pinos) ==
+  [OK   ] OUT_ENB_PFET_CARGA liga (corrente de carga > 0,1 A com o P-FET forcado): 0.47 A
+  [OK   ] OUT_ENB_PFET_CARGA desliga e a leitura de corrente responde (< 0,1 A): 0.01 A
+  [OK   ] OUT_ENB_RELE_BAT abre o K1 (corrente de carga some com o rele aberto): 0.46 A -> 0.01 A
+  [OK   ] OUT_DSB_FONTE corta a fonte (barramento cai da fonte para o banco durante o corte): barramento 28518 -> 26065 mV (banco 26350 mV)
+  [OK   ] placa segue viva no banco durante o corte (sem reiniciar): reiniciou=False, corrente -0.16 A
+  [--   ] OUT_BUZZER (bip de 0,3 s) e OUT_LED (aceso 1 s) forcados: conferir a olho/ouvido
+== RESULTADO: REPROVADA em 2 item(ns) ==
+   - fonte 26,0-29,5 V com rede presente: 0.5 V
+   - LPR correntes das pernas (retrabalho SEL0->INA): iA 0 iB 0: SEM carga na LPR ou SEM retrabalho SEL0 (ligue a carga de 2 A e repita com --so-lpr)

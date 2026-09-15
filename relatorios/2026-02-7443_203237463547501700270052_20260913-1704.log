@@ -1,0 +1,12 @@
+pacote alvo: nenhum   etiqueta: 2026-02-7443
+== esperando a placa em 192.168.5.101 (ate 120 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+== placa: MAC 00:80:E1:FE:D2:61  serial 2026-02-7443_203237463547501700270052  fw neonex_cftv_v-3.2.0.129  uptime 93 s ==
+== saida LPR 24 Vca ==
+  [OK   ] LPR ligada sem falha: falha=0 csMv=829
+  [OK   ] LPR pico na saida >= 20 V: voutMax 28045 mV, pctAlto 90 %
+  [OK   ] LPR sem codigo de falha no CS (< 3,0 V na janela): 829 mV
+  [OK   ] LPR regulacao de RMS ativa (4000-8333 us): onUs 7081, RMS calc 23975 mV
+  [OK   ] LPR correntes das pernas (retrabalho SEL0->INA): iA 1809 mA, iB 1831 mA, assimetria 1 %
+  [OK   ] LPR desliga (pico < 3 V): voutMax 666 mV
+== RESULTADO: APROVADA ==

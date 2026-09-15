@@ -1,0 +1,16 @@
+pacote alvo: nenhum   etiqueta: 2026-02-7444
+== esperando a placa em 192.168.5.101 (ate 120 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+== placa: MAC 00:80:E1:4F:B0:56  serial 2026-02-7444_203237463547501700560039  fw neonex_cftv_v-3.2.0.144  uptime 502 s ==
+== saidas do MCU (forcando pinos) ==
+  [OK   ] OUT_ENB_PFET_CARGA liga (corrente de carga > 0,1 A com o P-FET forcado): 4.21 A
+  [FALHA] OUT_ENB_PFET_CARGA desliga e a leitura de corrente responde (< 0,1 A): 4.06 A: leitura presa (INA226/shunt) ou caminho paralelo de carga (Q4/fiacao)
+  [FALHA] OUT_ENB_RELE_BAT abre o K1 (corrente de carga some com o rele aberto): 4.13 A -> 6.59 A: K1 nao abriu (contato colado, START_MANUAL, BC817) ou caminho fora do K1
+  [FALHA] OUT_DSB_FONTE corta a fonte (VFONTE cai durante o corte): fonte 28.9 V durante o corte
+  [FALHA] placa segue no banco durante o corte (corrente negativa, sem reiniciar): corrente 5.98 A, reiniciou=False
+  [--   ] OUT_BUZZER (bip de 0,3 s) e OUT_LED (aceso 1 s) forcados: conferir a olho/ouvido
+== RESULTADO: REPROVADA em 4 item(ns) ==
+   - OUT_ENB_PFET_CARGA desliga e a leitura de corrente responde (< 0,1 A): 4.06 A: leitura presa (INA226/shunt) ou caminho paralelo de carga (Q4/fiacao)
+   - OUT_ENB_RELE_BAT abre o K1 (corrente de carga some com o rele aberto): 4.13 A -> 6.59 A: K1 nao abriu (contato colado, START_MANUAL, BC817) ou caminho fora do K1
+   - OUT_DSB_FONTE corta a fonte (VFONTE cai durante o corte): fonte 28.9 V durante o corte
+   - placa segue no banco durante o corte (corrente negativa, sem reiniciar): corrente 5.98 A, reiniciou=False

@@ -1,0 +1,48 @@
+pacote alvo: neonex_cftv_v-3.2.0.129   etiqueta: 2026-02-7437
+== esperando a placa em 192.168.5.101 (ate 120 s) ==
+  respondeu; senha aceita: ANTIGA (neonex)
+== placa: MAC 00:80:E1:40:F0:78  serial 2026-02-7437_20323746354750170041004B  fw neonex_cftv_v-3.2.0.113  uptime 9 s ==
+  [OK   ] bootloader presente: flash externa ok, jedec ef4015
+  atualizando neonex_cftv_v-3.2.0.113 -> neonex_cftv_v-3.2.0.129 ...
+  192.168.5.101: neonex_cftv_v-3.2.0.113 -> enviando neonex_cftv_v-3.2.0.129.nxfw
+  192.168.5.101: aplicando, aguardando reinicio
+  192.168.5.101: ok, agora em neonex_cftv_v-3.2.0.129
+== esperando a placa em 192.168.5.101 (ate 90 s) ==
+  respondeu; senha aceita: ANTIGA (neonex)
+  [OK   ] OTA para o pacote alvo: neonex_cftv_v-3.2.0.129
+  [OK   ] configuracao restaurada ao padrao: configuracao restaurada ao padrao de fabrica - entre novamente
+  [OK   ] senha de fabrica Neonex@123 aceita
+  [OK   ] relogio acertado: hora acertada
+  [OK   ] alerta de fonte alta em 29,5 V: 29500 mV
+== hardware ==
+  [OK   ] I2C ina3221_40: addr 0x40 bus 1 falhas 0
+  [OK   ] I2C ina3221_41: addr 0x41 bus 1 falhas 0
+  [OK   ] I2C ina226: addr 0x45 bus 1 falhas 0
+  [OK   ] I2C sht30: addr 0x44 bus 1 falhas 0
+  [OK   ] fonte 26,0-29,5 V com rede presente: 28.8 V
+  [OK   ] bateria plausivel (> 20 V): INA226 25868 mV, ADC 26123 mV
+  [OK   ] VBAT ADC x INA226 dentro de 0,5 V: diferenca 255 mV
+  [OK   ] SoC por contagem de coulomb: 90 %, 0.49 A, estagio absorcao
+  [OK   ] temperatura da placa 0-70 C: 28.8 C
+  [OK   ] temperatura do painel 0-60 C: 20.0 C
+  [OK   ] umidade 5-95 %: 47.8 %
+  [OK   ] RTC sincronizado: 2026-09-13 16:29:32
+== saidas 12 Vcc ==
+  [OK   ] bullet1 desliga (VOUT < 4 V): 2.2 V
+  [OK   ] bullet1 liga (11-13 V): 12.0 V, 0.01 A
+  [OK   ] bullet2 desliga (VOUT < 4 V): 2.2 V
+  [OK   ] bullet2 liga (11-13 V): 12.1 V, 0.02 A
+  [OK   ] bullet3 desliga (VOUT < 4 V): 2.3 V
+  [OK   ] bullet3 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet4 desliga (VOUT < 4 V): 2.2 V
+  [OK   ] bullet4 liga (11-13 V): 12.0 V, 0.02 A
+== saida LPR 24 Vca ==
+  [OK   ] LPR ligada sem falha: falha=0 csMv=808
+  [OK   ] LPR pico na saida >= 20 V: voutMax 28199 mV, pctAlto 92 %
+  [OK   ] LPR sem codigo de falha no CS (< 3,0 V na janela): 808 mV
+  [OK   ] LPR regulacao de RMS ativa (4000-8333 us): onUs 7035, RMS calc 23845 mV
+  [OK   ] LPR correntes das pernas (retrabalho SEL0->INA): iA 1787 mA, iB 1789 mA, assimetria 0 %
+  [OK   ] LPR desliga (pico < 3 V): voutMax 666 mV
+  [OK   ] rele auxiliar alterna e volta: False -> True -> False
+  [OK   ] SNMP responde (tensao da bateria, saude): SNMPv2-SMI::enterprises.66420.1.3.2.0 = INTEGER: 26038 | SNMPv2-SMI::enterprises.66420.1.3.10.0 = INTEGER: 100
+== RESULTADO: APROVADA ==

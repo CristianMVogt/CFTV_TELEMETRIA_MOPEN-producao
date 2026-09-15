@@ -1,0 +1,41 @@
+pacote alvo: nenhum   etiqueta: 2026-02-7439
+== esperando a placa em 192.168.5.101 (ate 120 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+== placa: MAC 00:80:E1:54:D6:6E  serial 2026-02-7439_2032374635475017003D0051  fw neonex_cftv_v-3.2.0.129  uptime 30 s ==
+  [OK   ] bootloader presente: flash externa ok, jedec ef4015
+  [OK   ] firmware: neonex_cftv_v-3.2.0.129
+  [OK   ] relogio acertado: hora acertada
+  [OK   ] alerta de fonte alta em 29,5 V: 29500 mV
+== hardware ==
+  [OK   ] I2C ina3221_40: addr 0x40 bus 1 falhas 0
+  [OK   ] I2C ina3221_41: addr 0x41 bus 1 falhas 0
+  [OK   ] I2C ina226: addr 0x45 bus 1 falhas 0
+  [OK   ] I2C sht30: addr 0x44 bus 1 falhas 0
+  [OK   ] fonte 26,0-29,5 V com rede presente: 29.2 V
+  [OK   ] bateria plausivel (> 20 V): INA226 26303 mV, ADC 26444 mV
+  [OK   ] VBAT ADC x INA226 dentro de 0,5 V: diferenca 141 mV
+  [OK   ] SoC por contagem de coulomb: 100 %, 0.5 A, estagio absorcao
+  [OK   ] temperatura da placa 0-70 C: 30.2 C
+  [OK   ] temperatura do painel 0-60 C: 19.7 C
+  [OK   ] umidade 5-95 %: 50.7 %
+  [OK   ] RTC sincronizado: 2026-09-13 16:38:56
+== saidas 12 Vcc ==
+  [OK   ] bullet1 desliga (VOUT < 4 V): 2.2 V
+  [OK   ] bullet1 liga (11-13 V): 12.0 V, 0.0 A
+  [OK   ] bullet2 desliga (VOUT < 4 V): 2.2 V
+  [OK   ] bullet2 liga (11-13 V): 12.0 V, 0.01 A
+  [OK   ] bullet3 desliga (VOUT < 4 V): 2.2 V
+  [OK   ] bullet3 liga (11-13 V): 12.0 V, 0.02 A
+  [OK   ] bullet4 desliga (VOUT < 4 V): 2.2 V
+  [OK   ] bullet4 liga (11-13 V): 12.0 V, 0.02 A
+== saida LPR 24 Vca ==
+  [OK   ] LPR ligada sem falha: falha=0 csMv=0
+  [OK   ] LPR pico na saida >= 20 V: voutMax 28617 mV, pctAlto 78 %
+  [OK   ] LPR sem codigo de falha no CS (< 3,0 V na janela): 0 mV
+  [OK   ] LPR regulacao de RMS ativa (4000-8333 us): onUs 5748, RMS calc 23989 mV
+  [FALHA] LPR correntes das pernas (retrabalho SEL0->INA): iA 0 iB 0: SEM carga na LPR ou SEM retrabalho SEL0 (ligue a carga de 2 A e repita com --so-lpr)
+  [OK   ] LPR desliga (pico < 3 V): voutMax 655 mV
+  [OK   ] rele auxiliar alterna e volta: False -> True -> False
+  [OK   ] SNMP responde (tensao da bateria, saude): SNMPv2-SMI::enterprises.66420.1.3.2.0 = INTEGER: 26351 | SNMPv2-SMI::enterprises.66420.1.3.10.0 = INTEGER: 100
+== RESULTADO: REPROVADA em 1 item(ns) ==
+   - LPR correntes das pernas (retrabalho SEL0->INA): iA 0 iB 0: SEM carga na LPR ou SEM retrabalho SEL0 (ligue a carga de 2 A e repita com --so-lpr)

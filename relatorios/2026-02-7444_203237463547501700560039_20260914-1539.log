@@ -1,0 +1,13 @@
+pacote alvo: nenhum   etiqueta: 2026-02-7444
+== esperando a placa em 192.168.5.101 (ate 120 s) ==
+  respondeu; senha aceita: nova (Neonex@123)
+== placa: MAC 00:80:E1:4F:B0:56  serial 2026-02-7444_203237463547501700560039  fw neonex_cftv_v-3.2.0.144  uptime 566 s ==
+== saidas do MCU (forcando pinos) ==
+  [OK   ] OUT_ENB_PFET_CARGA liga (corrente de carga > 0,1 A com o P-FET forcado): 4.2 A
+  [FALHA] OUT_ENB_PFET_CARGA desliga e a leitura de corrente responde (< 0,1 A): 4.16 A: leitura presa (INA226/shunt) ou caminho paralelo de carga (Q4/fiacao)
+  [--   ] K1 pela corrente nao avaliavel: leitura do INA226 presa
+  [OK   ] OUT_DSB_FONTE corta a fonte (barramento cai da fonte para o banco durante o corte): barramento 28463 -> 26263 mV (banco 26480 mV)
+  [OK   ] placa segue viva no banco durante o corte (sem reiniciar): reiniciou=False, corrente nao avaliavel (INA226 preso)
+  [--   ] OUT_BUZZER (bip de 0,3 s) e OUT_LED (aceso 1 s) forcados: conferir a olho/ouvido
+== RESULTADO: REPROVADA em 1 item(ns) ==
+   - OUT_ENB_PFET_CARGA desliga e a leitura de corrente responde (< 0,1 A): 4.16 A: leitura presa (INA226/shunt) ou caminho paralelo de carga (Q4/fiacao)
